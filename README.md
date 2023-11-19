@@ -1,101 +1,73 @@
-# NestJS + Mongoose + MongoDB Starter Template
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-This is a template for a simple To Do List web app that consists of a REST API and a simple front end UI.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-<p align="center"><img src="screenshot.png" width="90%" /></p>
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-The app uses [NextJS](https://nextjs.com) as the foundation that provides the REST API back end and also serves the static front end.
-[Mongoose](https://mongoosejs.com) is used to define the data model and interfaces to the [MongoDB](https://mongodb.com) database.
+## Description
 
-## Using this Starter Template
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-This repo can be used as an [Adaptable.io](https://adaptable.io) Starter.
-For instructions on using this repo as a template and deploying to the Adaptable Cloud in just a few clicks, check out the [Starter Guide](https://adaptable.io/docs/starters/nestjs-mongo-starter).
+## Installation
 
-## Running a local dev environment
-
-All of the following instructions assume you are in the repo root directory.
-
-### 1. Install Node.js modules
-
-```console
-yarn
+```bash
+$ yarn install
 ```
 
-### 2. Run MongoDB locally
+## Running the app
 
-The app requires a database to store the data for the REST API.
-You can run a MongoDB cluster on your local development system if you have Docker installed.
+```bash
+# development
+$ yarn run start
 
-To run a MongoDB cluster using Docker:
+# watch mode
+$ yarn run start:dev
 
-```console
-yarn run mongo-start
+# production mode
+$ yarn run start:prod
 ```
 
-To later stop the MongoDB cluster:
+## Test
 
-> **WARNING**: All data stored in the local cluster will be deleted when the container is stopped.
-> For information on persisting the database data, see [the MongoDB Docker README](https://github.com/docker-library/docs/blob/master/mongo/README.md#where-to-store-data).
-
-```console
-yarn run mongo-stop
-```
-
-### 3. Start the app (watch mode)
-
-```console
-yarn run start:dev
-```
-
-> **NOTE**: By default, the app listens on port 3000. To use a different port, set the `PORT` environment variable to the desired port number.
-
-### 4. Connect to your app
-
-Use a web browser to connect to [http://localhost:3000](http://localhost:3000)
-
-## Running in production
-
-### 1. Set DATABASE_URL
-
-The app uses the environment variable `DATABASE_URL` to connect to your MongoDB instance.
-Ensure that `DATABASE_URL` is set to the URL for your MongoDB cluster.
-
-### 2. Build
-
-```console
-yarn run build
-```
-
-### 3. Run
-
-```console
-yarn run start
-```
-
-## Testing
-
-```console
+```bash
 # unit tests
-yarn run test
+$ yarn run test
 
 # e2e tests
-yarn run test:e2e
+$ yarn run test:e2e
 
 # test coverage
-yarn run test:cov
+$ yarn run test:cov
 ```
 
-## Source Code
+## Support
 
-### REST API (back end)
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-This project follows the NestJS conventions for file and directory structure.
-The implementation of the `/todos` REST API endpoint can be found in `src/todoitems/`.
+## Stay in touch
 
-### Web UI (front end)
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-The layout and static portions of the front end can be found in `public/index.html`
-The dynamic part of the front end is in `public/js/client.js`.
+## License
 
-<p align="center"><a href="https://adaptable.io"><img src="https://adaptable.io/img/color lockup.svg" height="50px" alt="Adaptable.io" /></a></p>
+Nest is [MIT licensed](LICENSE).
